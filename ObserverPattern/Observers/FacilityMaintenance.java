@@ -3,7 +3,7 @@ import com.observer.subject.Inspection;
 
 enum RequestType {Repair, Cleaning, BrokenItem}
 
-public class FacilityMaintainence implements Inspection {
+public class FacilityMaintenance implements Inspection {
 
     private Integer RequestID;
     private int mainRequestID;
