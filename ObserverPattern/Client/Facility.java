@@ -1,6 +1,6 @@
 package com.observer.observer;
-import adamSmithComp373Proj1.DAL.FacilityDAO;
-
+import com.observer.observers.*;
+import com.observer.subject.*;
 import java.util.ArrayList;
 
 public class Facility implements Observer {
