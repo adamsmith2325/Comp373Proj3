@@ -1,21 +1,26 @@
-package adamSmithComp373Proj1.Domain.BridgePatternClasses;
+package adamSmithComp373Proj1.BridgePattern;
 
-public interface MaintainenceResource(){
-    public String getName();
+public class MaintainenceResource{
+  
+    Integer ID;
+    String Name;
 
-    public String getLocation();
+
+    public void setResourceType(){
+          System.out.println("Maintainence");
+    }
+    
+    public Integer getID(){
+        return this.ID;
+    }
+
+    public String getName(){
+        return this.Name;
+    }
    
-    public String getPhone();
+    public void setName(String newName){
+        this.Name = newName;
+    }
    
-    public Integer getNumberOfRooms();
-   
-    public Integer getOccupiedRooms();
-   
-    public void setName(String newName);
-   
-    public void setLocation(String newLocation);
-   
-    public void setPhone(String newPhone);
-   
-    public void setNumberOfRooms(Integer newRoomsNum);
+
 }

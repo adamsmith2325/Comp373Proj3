@@ -1,21 +1,25 @@
-package adamSmithComp373Proj1.Domain.BridgePatternClasses;
+package adamSmithComp373Proj1.BridgePattern;
 
-public interface UseResource(){
-    public String getName();
+public class UseResource{
+    
+    Integer ID;
+    String Name;
 
-    public String getLocation();
+
+    public void setResourceType(){
+          System.out.println("Use");
+    }
+    
+    public Integer getID(){
+        return this.ID;
+    }
+
+    public String getName(){
+        return this.Name;
+    }
    
-    public String getPhone();
+    public void setName(String newName){
+        this.Name = newName;
+    }
    
-    public Integer getNumberOfRooms();
-   
-    public Integer getOccupiedRooms();
-   
-    public void setName(String newName);
-   
-    public void setLocation(String newLocation);
-   
-    public void setPhone(String newPhone);
-   
-    public void setNumberOfRooms(Integer newRoomsNum);
 }

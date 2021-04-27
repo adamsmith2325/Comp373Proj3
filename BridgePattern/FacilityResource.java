@@ -1,4 +1,4 @@
-package adamSmithComp373Proj1.Domain.BridgePatternClasses;
+package adamSmithComp373Proj1.BridgePattern;
 
 public class FacilityResource implements Resource{
     

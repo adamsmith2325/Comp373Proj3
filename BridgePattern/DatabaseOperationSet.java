@@ -1,5 +1,5 @@
-package adamSmithComp373Proj1.Domain.BridgePatternClasses;
-import adamSmithComp373Proj1.Domain.BridgePatternClasses.*;
+package adamSmithComp373Proj1.BridgePattern;
+import adamSmithComp373Proj1.BridgePattern.*;
 
 public abstract class DatabaseOperationSet{
 
