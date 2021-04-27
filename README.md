@@ -2,6 +2,23 @@
 
 Project 3: Implementing Patterns
 
+Team Members:
+Adam Smith and Neha Patel
+
+
+Project Documentation:
+
+Bridge Pattern:
+The Bridge pattern decouples the main classes Facility, FacilityUse, FacilityMaintenance and Inspection from getters and setters. By using this type of pattern, an engineer can modify either class in the future without effecting the other one creating an extremely team friendly system with high testability and stability. 
+
+Observer Pattern:
+
+For our Observer pattern, we created a program which creates a Facility report based on the  changes to the facility observer. There are different kinds of observers that play a role in this such as the facility managers, engineers, and clients. The Observer pattern is used by means of notifying observers of availability or status change of a facility whenever the subject changes. The subject package contains the FacilityGetSetInterface interface and its implementer, “Inspection”. The observers package contains the FacilityObserver interface and implementers, “FacilityUse” and “FacilityMaintenance”. In our program there are two examples of observers: “FacilityUse” and “FacilityMaintenance”.
+
+
+Visitor Pattern:
+
+The Visitor Pattern allows the classes to become more lightweight, so instead of having three methods there would only be one. The method iterates through the array, accepting updates for each class. Without using this pattern, each class would have to use its own unique method for checking and reporting its status, which is less efficient. Each method could also be expanded so that different reports could be made depending on the situation. 
 
 Project Description:
 
