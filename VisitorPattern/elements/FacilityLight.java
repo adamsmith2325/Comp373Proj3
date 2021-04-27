@@ -11,11 +11,6 @@ public class Facility implements element{
         v.visit(this);
     }
 
-
-    public static void main(String[] args) {
-         
-    }
-
 }
 
 
