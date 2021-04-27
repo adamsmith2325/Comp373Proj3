@@ -1,7 +1,7 @@
 package adamSmithComp373Proj1;
 
 import adamSmithComp373Proj1.Domain.*;
-import adamSmithComp373Proj1.VisitorPattern.*;
+import adamSmithComp373Proj1.*;
 
 public final class App {
     private App() {
@@ -34,10 +34,5 @@ public final class App {
         //FacilityMaintainence main = new FacilityMaintainence();  
         //FacilityUse test = new FacilityUse(1);
        // System.out.println(test.getDateStarted());
-
-        fac1 = new FacilityLight();
-        fac1.name = "Adam";
-        getNameVis = new GetNameVisitor();
-        System.out.println(fac1.accept(getNameVis));
     }
 }
