@@ -1,6 +1,7 @@
 package adamSmithComp373Proj1;
 
 import adamSmithComp373Proj1.Domain.*;
+import adamSmithComp373Proj1.VisitorPattern.*;
 
 public final class App {
     private App() {
@@ -11,7 +12,7 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-       Facility facility = new Facility(1);
+       //Facility facility = new Facility(1);
        //Facility facility2 = new Facility(2);
         //System.out.println(facility.getFacilityInformation());
         //System.out.println(facility.getName());
@@ -19,7 +20,7 @@ public final class App {
         //System.out.println(facility.getLocation());
         //System.out.println("Hello World!");
         //System.out.println(facility.getOccupiedRooms());
-        System.out.println(facility.listFacilities());
+        //System.out.println(facility.listFacilities());
         //facility.addNewFacility("Interface Insert Test", "6533 N Newgard Avenue, Chicago, IL 60626", "9062039222", 15);\
         //System.out.println(facility.getNumberOfRooms());
         //System.out.println(facility.requestAvailableCapacity());
@@ -33,5 +34,10 @@ public final class App {
         //FacilityMaintainence main = new FacilityMaintainence();  
         //FacilityUse test = new FacilityUse(1);
        // System.out.println(test.getDateStarted());
+
+        fac1 = new FacilityLight();
+        fac1.name = "Adam";
+        getNameVis = new GetNameVisitor();
+        System.out.println(fac1.accept(getNameVis));
     }
 }
