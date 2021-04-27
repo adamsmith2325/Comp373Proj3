@@ -3,7 +3,7 @@ import com.observer.observers.*;
 import com.observer.subject.*;
 import java.util.ArrayList;
 
-public class Facility implements Observer {
+public class Facility {
     
     //Required Class Attributes
     private FacilityDAO Connection  = new FacilityDAO();
