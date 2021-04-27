@@ -1,9 +1,9 @@
 package com.observer.observers;
-import adamSmithComp373Proj1.Domain.*;
+import com.observer.subject.Inspection;
 
 enum RequestType {Repair, Cleaning, BrokenItem}
 
-public class FacilityMaintainence implements FacilityObserver {
+public class FacilityMaintainence implements Inspection {
 
     private Integer RequestID;
     private int mainRequestID;
