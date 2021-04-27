@@ -1,14 +1,12 @@
 package com.observer.observers;
-import adamSmithComp373Proj1.Domain.*;
-import adamSmithComp373Proj1.DAL.*;
 import java.time.format.DateTimeFormatter;
 import java.sql.Date;
 import java.time.LocalDate;
-import com.observer.subject.FacilityMaintenance;
+import com.observer.subject.Inspection;
 
 /*  */
 
-public class FacilityUse extends AbGetSetUse{
+public class FacilityUse extends Inspection{
 
 
     LocalDate today = LocalDate.now();
